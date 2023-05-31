@@ -1,0 +1,80 @@
+{% extends "moviesdb/base.html" %}
+
+{% load static %}
+
+{% block metaLinks %}
+    <link rel="stylesheet" href="{% static 'db.css' %}"> 
+{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="content">
+    <table>
+        <tr>
+            <td>
+                <button class="g" onclick="g()">G</button> <!-- first col -->
+            </td>
+            <td>
+                <button class="pg" onclick="pg()">PG</button> <!-- second col -->
+            </td>
+            <td>
+                <button class="pg13" onclick="pg13()">PG-13</button> <!-- third col -->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="r" onclick="r()">R</button> <!-- first col -->
+            </td>
+            <td>
+                <button class="nr" onclick="nr()">NR</button> <!-- second col -->
+
+            </td>
+            <td>
+                <button class="tv" onclick="tv()">TV</button> <!-- third col -->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="add" onclick="add()">Add Movie</button> <!-- first col -->
+            </td>
+            <td>
+                <button class="search" onclick="search()">Search</button> <!-- second col -->
+            </td>
+            <td>
+                <button class="logout" onclick="logout()">Logout</button> <!-- third col -->
+            </td>
+        </tr>
+    </table>
+</div>
+{{ redirect_to_login_immediately }}
+<script>
+    function g(){
+        window.location.href="{% url 'g' %}"
+    }
+    function pg(){
+        window.location.href="{% url 'pg' %}"
+    }
+    function pg13(){
+        window.location.href="{% url 'pg13' %}"
+    }
+    function r(){
+        window.location.href="{% url 'r' %}"
+    }
+    function nr(){
+        window.location.href="{% url 'nr' %}"
+    }
+    function tv(){
+        window.location.href="{% url 'tv' %}"
+    }
+    function add(){
+        window.location.href="{% url 'add' %}"
+    }
+    function search(){
+        window.location.href="{% url 'search' %}"
+    }
+    function logout(){
+        window.location.href="/logout"
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    background-image: url("background.jpg");
+    background-size: 100%;
+}
+
+.content{
+    width: fit-content;
+    height: fit-content;
+    margin: 35dvh auto;
+}
+
+.login{
+    padding-top:12dvh;
+    padding-bottom:12dvh;
+    padding-left:8dvw;
+    padding-right:8dvw;
+    font-size: 8dvh;
+    background: rgba(0,0,0,0.4);
+    color:aliceblue;
+}

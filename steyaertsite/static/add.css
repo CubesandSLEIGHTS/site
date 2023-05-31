@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    background-image: url("/static/background.jpg");
+    background-size: 100%;
+}
+
+.content{
+    margin: 20dvh 37.5dvw;
+    width: 25dvw;
+    padding: 2% 5%;
+    border-radius: 5%;
+    background-color: rgba(0,0,0,0.3);
+    overflow-y: hidden;
+}
+
+button[type=submit], input[type=text]{
+    background: rgba(0,0,0,0.4);
+}
+
+.select{
+    background: rgba(0,0,0,0.4);
+    color: cyan;
+}
+
+.content label{
+    color: cyan;
+    text-align: center;
+}
+
+.content input[type=text]{
+    width: 13dvw;
+    margin: 0 1dvw;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    color: cyan;
+}
+
+.content ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: cyan;
+    opacity: 1; /* Firefox */
+}
+  
+.content :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: cyan;
+}
+  
+.content ::-ms-input-placeholder { /* Microsoft Edge */
+    color: cyan;
+}
+
+#id_rating{
+    width: 7dvw;
+    margin: 0 4dvw;
+}
+
+#id_disk{
+    width: 9dvw;
+    margin: 0 3dvw;
+}
+
+button[type=submit]{
+    padding: 0.5dvh;
+    width: 10dvw;
+    margin: 1dvh 2.5dvw;
+    color: cyan;
+}

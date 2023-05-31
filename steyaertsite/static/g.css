@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(87, 78, 78);
+}
+
+.body, .header{
+    position: relative;
+    width:fit-content;
+    margin: 0 auto;
+}
+
+.header{
+    color: green;
+    text-align: center;
+}
+
+
+.body li{
+    color: silver;
+    font-size: larger;
+}
+

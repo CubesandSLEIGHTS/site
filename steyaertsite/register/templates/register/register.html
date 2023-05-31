@@ -1,0 +1,13 @@
+{% extends 'moviesdb/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<form action="#" method="post">
+    {% csrf_token %}
+    {{form|crispy}}
+    <button type="submit">Register</button>
+</form>
+{% endblock %}

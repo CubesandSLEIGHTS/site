@@ -1,0 +1,27 @@
+{% extends 'moviesdb/baseMovies.html' %}
+{% load static %}
+
+{% block title %}PG-13 Movies{% endblock %}
+
+{% block metaLinks %}
+    <link rel="stylesheet" href="{% static 'pg13.css' %}">
+{% endblock %}
+
+{% block dropdownLinks %}
+    <a class="dropdown-item" href="{% url 'g' %}">G</a>
+    <a class="dropdown-item" href="{% url 'pg' %}">PG</a>
+    <a class="dropdown-item disabled" href="{% url 'pg13' %}">PG-13</a>
+    <a class="dropdown-item" href="{% url 'r' %}">R</a>
+    <a class="dropdown-item" href="{% url 'nr' %}">NR</a>
+    <a class="dropdown-item" href="{% url 'tv' %}">TV</a>
+{% endblock %}
+
+{% block head %}PG-13 Movies{% endblock %}
+
+{% block body %}
+    <ol>
+        {% for title in titles %}
+            <li>{{title}}</li>
+        {% endfor %}
+    </ol>
+{% endblock %}

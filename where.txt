@@ -1,0 +1,6 @@
+FOR POSTGRES AND DJANGO:
+https://djangocentral.com/using-postgresql-with-django/
+
+
+NEED TO REMOVE:
+et-xmlfile-1.1.0 openpyxl-3.1.2

@@ -1,0 +1,1 @@
+web gunicorn steyaertsite.wsgi:application --log-file -
